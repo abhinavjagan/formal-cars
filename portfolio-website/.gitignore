@@ -1,0 +1,35 @@
+# Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+frontend/.env.*.local
+frontend/coverage/
+frontend/dist/
+
+# Backend
+backend/node_modules/
+backend/.env.local
+backend/logs/
+backend/*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
