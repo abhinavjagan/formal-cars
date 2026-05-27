@@ -1,8 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { SKILL_CATALOG } from '@/utils/skills';
 
+const defaultSiteUrl = `https://abhinavjagan.github.io${process.env.NEXT_PUBLIC_BASE_PATH || ''}`;
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://abhinavjagan.github.io/formal-cars';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || defaultSiteUrl;
 
   const skillRoutes: MetadataRoute.Sitemap = SKILL_CATALOG.map((skill) => ({
     url: `${baseUrl}/skills/${skill.slug}`,

@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: false,
   compress: false,
   poweredByHeader: false,
-  basePath: '/formal-cars',
+  basePath: publicBasePath || undefined,
   env: {
-    NEXT_PUBLIC_BASE_PATH: '/formal-cars',
+    NEXT_PUBLIC_BASE_PATH: publicBasePath,
   },
   output: 'export',
   images: {

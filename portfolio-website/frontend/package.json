@@ -6,11 +6,11 @@
     "node": ">=18 <=20"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next build"
+    "dev": "npx --yes node@20 ./node_modules/next/dist/bin/next dev",
+    "build": "npx --yes node@20 ./node_modules/next/dist/bin/next build",
+    "start": "npx --yes node@20 ./node_modules/next/dist/bin/next start",
+    "lint": "npx --yes node@20 ./node_modules/next/dist/bin/next lint",
+    "export": "npx --yes node@20 ./node_modules/next/dist/bin/next build"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
