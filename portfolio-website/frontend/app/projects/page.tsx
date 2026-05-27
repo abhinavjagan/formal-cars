@@ -4,6 +4,8 @@ import { PROJECTS } from '@/utils/constants';
 import { findSkillBySlug, toSlug } from '@/utils/skills';
 import { generateMetadata as generateMetaData } from '@/utils/seo';
 
+export const dynamic = 'force-static';
+
 export const metadata: Metadata = generateMetaData(
   'Projects',
   'Showcase of my portfolio projects - web development, machine learning, and system design',
