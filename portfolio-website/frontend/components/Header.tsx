@@ -46,14 +46,14 @@ export default function Header() {
           ))}
         </nav>
 
-        <a
+        <Link
           href="/resume.pdf"
           target="_blank"
           rel="noreferrer"
           className="hidden md:block text-xs uppercase tracking-[0.2em] text-white/75 hover:text-white transition-colors"
         >
           Resume
-        </a>
+        </Link>
 
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -80,7 +80,7 @@ export default function Header() {
                 {item.label}
               </a>
             ))}
-            <a
+            <Link
               href="/resume.pdf"
               target="_blank"
               rel="noreferrer"
@@ -88,7 +88,7 @@ export default function Header() {
               className="text-white/70 hover:text-white py-2 transition-colors"
             >
               Resume
-            </a>
+            </Link>
           </div>
         </nav>
       </div>
