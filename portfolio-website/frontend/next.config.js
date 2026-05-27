@@ -5,6 +5,9 @@ const nextConfig = {
   compress: false,
   poweredByHeader: false,
   basePath: '/formal-cars',
+  env: {
+    NEXT_PUBLIC_BASE_PATH: '/formal-cars',
+  },
   output: 'export',
   images: {
     unoptimized: true,

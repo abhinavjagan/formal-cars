@@ -24,6 +24,8 @@ export default function AsciiImage({ src, alt, className = '' }: AsciiImageProps
 
   useEffect(() => {
     let disposed = false;
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+    const imagePath = src.startsWith('/') ? `${basePath}${src}` : `${basePath}/${src}`;
 
     const render = (img: HTMLImageElement) => {
       if (disposed) return;
@@ -63,7 +65,7 @@ export default function AsciiImage({ src, alt, className = '' }: AsciiImageProps
     };
 
     const img = new Image();
-    img.src = src;
+    img.src = imagePath;
 
     img.onload = () => {
       render(img);

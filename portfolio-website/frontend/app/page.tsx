@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import AsciiImage from '@/components/AsciiImage';
 import ProjectAccordion from '@/components/ProjectAccordion';
 import { generateMetadata as generateMetaData, structuredData } from '@/utils/seo';
@@ -34,13 +35,13 @@ export default function Home() {
               Software developer focused on distributed systems, machine learning, and practical product engineering.
             </p>
             <div className="mt-10 flex flex-wrap gap-6 text-xs uppercase tracking-[0.2em] text-white/70">
-              <a href="/#projects">Projects</a>
-              <a href="/#skills">Skills</a>
-              <a href="/#contact">Contact</a>
-              <a href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+              <Link href="/#projects">Projects</Link>
+              <Link href="/#skills">Skills</Link>
+              <Link href="/#contact">Contact</Link>
+              <Link href="/resume.pdf" target="_blank" rel="noreferrer">Resume</Link>
             </div>
           </div>
-          <AsciiImage src="/cars.jpg" alt="ASCII manga racing scene" />
+          <AsciiImage src="/ascii.png" alt="ASCII manga racing scene" />
         </section>
 
         <section id="about" className="container py-20 scroll-mt-24">
