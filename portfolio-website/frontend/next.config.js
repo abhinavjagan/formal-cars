@@ -4,6 +4,8 @@ const nextConfig = {
   swcMinify: true,
   compress: true,
   poweredByHeader: false,
+  basePath: '/formal-cars',
+  output: 'export',
   images: {
     domains: ['localhost', 'api.github.com'],
     formats: ['image/avif', 'image/webp'],

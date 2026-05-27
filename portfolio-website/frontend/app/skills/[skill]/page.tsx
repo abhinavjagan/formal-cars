@@ -3,13 +3,19 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { generateMetadata as generateMetaData } from '@/utils/seo';
 import { PROJECTS } from '@/utils/constants';
-import { findSkillBySlug, toSlug } from '@/utils/skills';
+import { SKILL_CATALOG, findSkillBySlug, toSlug } from '@/utils/skills';
 
 export const metadata: Metadata = generateMetaData(
   'Skill',
   'Projects matched to a specific skill',
   '/skills'
 );
+
+export function generateStaticParams() {
+  return SKILL_CATALOG.map((skill) => ({
+    skill: skill.slug,
+  }));
+}
 
 export default function SkillDetailPage({
   params,

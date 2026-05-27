@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { SKILL_CATALOG } from '@/utils/skills';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://abhinavjagan.github.io/formal-cars';
 
   return [
     {
@@ -22,5 +23,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.7,
     },
+    ...SKILL_CATALOG.map((skill) => ({
+      url: `${baseUrl}/skills/${skill.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    })),
   ];
 }
