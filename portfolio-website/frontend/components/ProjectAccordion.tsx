@@ -26,13 +26,15 @@ export default function ProjectAccordion() {
                   <li key={detail}>{detail}</li>
                 ))}
               </ul>
-              <div className="project-actions">
-                {project.links?.map((link) => (
-                  <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
-                    {link.label}
-                  </a>
-                ))}
-              </div>
+              {project.links?.length ? (
+                <div className="project-actions">
+                  {project.links.map((link) => (
+                    <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              ) : null}
             </div>
           </article>
         );

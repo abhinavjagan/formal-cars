@@ -58,7 +58,7 @@ export const structuredData = (type: string, data: any) => {
       jobTitle: "Software Developer",
       sameAs: [
         "https://linkedin.com/in/abhinavpolimera",
-        "https://github.com/abhinavpolimera",
+        "https://github.com/abhinavjagan",
         "https://twitter.com/abhinavpolimera",
       ],
       contactPoint: {

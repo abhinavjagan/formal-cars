@@ -2,7 +2,7 @@ export const SITE_NAME = "Abhinav Jagan Polimera";
 export const SITE_DESCRIPTION = "Software Developer | Distributed Systems | AI/ML Engineer | Full-Stack Developer";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const SOCIAL_LINKS = {
-  github: "https://github.com/abhinavpolimera",
+  github: "https://github.com/abhinavjagan",
   linkedin: "https://linkedin.com/in/abhinavpolimera",
   email: "abhinavpolimera@gmail.com",
   twitter: "https://twitter.com/abhinavpolimera",
@@ -15,10 +15,9 @@ export const EXPERIENCE = [
     duration: "Apr 2026 - Present",
     location: "On-site",
     highlights: [
-      "Designed a next-generation ERSPAN solution using GUE (UDP-based) encapsulation as a scalable alternative to GRE.",
-      "Led customer-driven feature development for Microsoft packet mirroring requirements with hardware-accelerated performance optimization.",
-      "Contributed to an AI-driven Infrastructure-as-a-Service prototype for deploying quantized ML models on Cisco routers.",
-      "Applied data-driven model selection on large-scale network telemetry and helped move the prototype into customer evaluation.",
+      "Built graph-based AI and LLM infrastructure for agentic workflows, improving internal developer platform capabilities and tooling efficiency.",
+      "Delivered distributed networking features across high-performance router operating systems and packet-mirroring infrastructure.",
+      "Improved validation throughput and debugging speed using telemetry-driven workflows, automation, and customer-focused feature development.",
     ],
   },
   {
@@ -27,11 +26,9 @@ export const EXPERIENCE = [
     duration: "Aug 2024 - Apr 2026",
     location: "On-site",
     highlights: [
-      "Led end-to-end delivery of egress traffic mirroring for Cisco 8000 Silicon One routers, enabling functional parity with NCS 5000 for SoftBank migration.",
-      "Owned delivery, debugging, and proof-of-concept execution across SPAN, Lawful Intercept, and NetFlow features in Cisco's OS stack.",
-      "Reduced delivery time by 60% through component design expertise and AI-assisted development.",
-      "Spearheaded scalable automation infrastructure for sanity testing, faster debugging, and improved product quality.",
-      "Built AI-powered productivity tools including a leadership metrics analyzer and a unified traffic mirroring simulation platform.",
+      "Delivered traffic mirroring features for Cisco 8000 Silicon One routers across SPAN, Lawful Intercept, NetFlow, and ERSPAN workflows.",
+      "Built a unified simulation and debugging platform that reduced triage time and accelerated feature validation for complex networking scenarios.",
+      "Developed AI-assisted developer tooling and telemetry analysis workflows to speed debugging, improve product quality, and support customer evaluation.",
     ],
   },
   {
@@ -40,14 +37,56 @@ export const EXPERIENCE = [
     duration: "Jan 2024 - Jun 2024",
     location: "On-site",
     highlights: [
-      "Optimized router OS feature testing and deployment through refined test design and parallel execution.",
-      "Earned an internal Cisco excellence award for the testing optimization initiative.",
-      "Led Python automation lifecycle for NTP VRF OpenConfig feature delivery.",
+      "Automated router OS test and deployment workflows for networking features, improving reliability and reducing repeated manual effort.",
+      "Led Python-based validation and configuration workflows for NTP VRF and OpenConfig feature delivery.",
+      "Contributed to feature readiness with stronger test design, faster issue isolation, and measurable quality improvements.",
     ],
   },
 ];
 
 export const PROJECTS = [
+  {
+    slug: "graph-based-agentic-platform",
+    title: "Graph-Based Agentic Intelligence Platform",
+    description: "A graph-driven AI workflow for connecting engineering context, relationships, and tool signals into more useful agentic experiences.",
+    details: [
+      "Explored a graph-based approach to retrieval and reasoning so AI systems could connect structured context across engineering workflows.",
+      "Focused on making agentic experiences more useful by combining semantic relationships with practical developer context.",
+      "Designed the work around real product constraints: explainability, reliability, and a clear path to deployment in developer-facing environments.",
+    ],
+    tech: ["Python", "LLMs", "Graph Systems", "Agentic AI"],
+    links: [{ label: "Contact", href: "https://github.com/abhinavjagan" }],
+    category: "AI/ML",
+    skills: ["LLM Infrastructure", "Agentic AI", "Knowledge Graphs"],
+  },
+  {
+    slug: "traffic-mirroring-simulation",
+    title: "Traffic Mirroring Simulation Platform",
+    description: "A unified simulation and debugging platform for Cisco network mirroring features spanning SPAN, Lawful Intercept, NetFlow, and ERSPAN workflows.",
+    details: [
+      "Built a productivity-focused platform that brought together multiple traffic mirroring features into one coherent test and debugging experience.",
+      "Helped reduce validation effort and accelerate root-cause analysis for complex distributed networking scenarios.",
+      "Combined product thinking with systems-level debugging to make network feature workflows easier to reason about and validate.",
+    ],
+    tech: ["Distributed Systems", "Python", "Automation", "Network Testing"],
+    links: [{ label: "Contact", href: "https://github.com/abhinavjagan" }],
+    category: "Distributed Systems",
+    skills: ["Distributed Systems", "Automation", "Network Engineering"],
+  },
+  {
+    slug: "ai-telemetry-prototype",
+    title: "AI-Driven Network Telemetry Prototype",
+    description: "An internal prototype that explored deploying quantized ML models on Cisco routers using telemetry-driven decision support.",
+    details: [
+      "Worked on an AI-assisted infrastructure prototype for applying quantized machine learning models in networking environments.",
+      "Used telemetry and performance data to guide model selection and improve the practicality of prototype evaluation with customers.",
+      "Connected model experimentation with real product constraints such as latency, deployment complexity, and hardware limitations.",
+    ],
+    tech: ["AI/ML", "Python", "Telemetry", "Router Systems"],
+    links: [{ label: "Contact", href: "https://github.com/abhinavjagan" }],
+    category: "AI/ML",
+    skills: ["Machine Learning", "Distributed Systems"],
+  },
   {
     slug: "playlistify",
     title: "Playlistify",
@@ -59,9 +98,7 @@ export const PROJECTS = [
       "Used the project to demonstrate problem-solving initiative, curiosity, API integration, and a clean product workflow around a small but real user pain point.",
     ],
     tech: ["Python", "Flask", "Spotify API", "React"],
-    links: [
-      { label: "GitHub", href: "https://github.com/abhinavjagan" },
-    ],
+    links: [{ label: "GitHub", href: "https://github.com/abhinavjagan" }],
     category: "Web Development",
     skills: ["Python", "Flask", "React", "Full-Stack Development"],
   },
@@ -108,8 +145,39 @@ export const PROJECTS = [
 ];
 
 export const SKILLS = {
-  languages: ["Python", "TypeScript", "JavaScript", "C++", "SQL"],
-  frameworks: ["React", "Next.js", "Flask", "Express.js", "Node.js"],
-  tools: ["Docker", "Kubernetes", "Git", "AWS", "GCP", "Linux"],
-  specialties: ["Distributed Systems", "Machine Learning", "Network Engineering", "Full-Stack Development"],
+  programming: ["Python", "C", "C++", "Shell Scripting"],
+  aiAndMachineLearning: [
+    "Large Language Models (LLMs)",
+    "Agentic AI",
+    "AI Agents",
+    "Multi-Agent Systems",
+    "Agentic Workflows",
+    "Context-Prompt Engineering",
+    "Retrieval-Augmented Generation (RAG)",
+    "Knowledge Graphs",
+    "Vector Databases",
+    "Embedding Models",
+    "Fine-tuning",
+    "LLM Evaluation (Evals)",
+    "Model Context Protocol (MCP)",
+    "LangGraph",
+    "Hugging Face",
+    "Transformers",
+  ],
+  systemsAndNetworking: [
+    "Distributed Systems",
+    "Network Operating Systems",
+    "Systems Programming",
+    "Computer Networking",
+    "Routing",
+    "Cisco Silicon One",
+    "Linux",
+  ],
+  computerVision: [
+    "OpenCV",
+    "Computer Vision",
+    "Image Processing",
+    "Object Detection",
+    "Neural Radiance Fields (NeRFs)",
+  ],
 };

@@ -204,12 +204,13 @@ body::after {
   background: #000;
   overflow: hidden;
   box-shadow: none;
-  width: min(100%, 96rem);
-  max-width: none;
-  height: calc(100vh - 4rem);
-  min-height: 63rem;
-  justify-self: end;
-  align-self: stretch;
+  width: min(100%, 58rem);
+  max-width: 58rem;
+  height: auto;
+  max-height: calc(85vh);
+  min-height: auto;
+  justify-self: center;
+  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,16 +219,20 @@ body::after {
   z-index: 1;
 }
 
-.ascii-image pre {
-  margin: 0;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: clamp(0.27rem, 0.405vw, 0.3825rem);
-  line-height: 0.76;
-  letter-spacing: 0;
-  white-space: pre;
-  max-width: 100%;
-  overflow: hidden;
+.ascii-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  max-height: calc(85vh - 4rem);
+}
+
+.ascii-image-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  max-height: calc(85vh - 4rem);
 }
 
 @keyframes liquid-shadow {
